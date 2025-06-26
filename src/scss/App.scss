@@ -1,0 +1,91 @@
+$theme-colors: (
+  "primary": #884a9d,
+);
+
+$h1-font-size: 48px;
+
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+@import "../../node_modules/bootstrap/scss/variables";
+
+@font-face {
+  font-family: "Gotham Pro";
+  src: url("../assets/fonts/gothampro.ttf");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Gotham Pro";
+  src: url("../assets/fonts/gothampro_bold.ttf");
+  font-weight: bold;
+}
+
+* {
+  font-family: "Gotham Pro", Arial, Helvetica, sans-serif;
+  font-weight: normal;
+}
+h1 {
+  display: block;
+  font-weight: 700;
+  text-wrap: wrap;
+  width: 570px;
+  @media screen and (max-width: 1200px) {
+    width: 100%;
+  }
+}
+p#subtitle {
+  font-size: 18px;
+}
+a#pagelink {
+  font-size: 16px;
+  font-weight: bold;
+}
+img#pageimage {
+  max-width: 400px;
+}
+
+
+.requestModal .modal-content{
+    min-height: 570px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.requestModal h2{
+    font-size: 2.625em;
+    width: fit-content;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.requestModal p#sub{
+    font-size: 1.125em;
+    text-align: center;
+    margin-bottom: 30px;
+    max-width: 585px;
+}
+.requestModal p#accepts{
+    max-width: 330px;
+    font-size: 12px;
+    text-align: center;
+    color: #91919B;
+    a{
+        color: #91919B;
+    }
+}
+#request-form{
+    margin-bottom: 30px;
+    gap: 16px;
+    @media screen and (max-width: 1200px) {
+        gap: 0;
+    }
+}
+.modal-input{
+    background-color: #F3F3F3;
+    border: 1px solid #E2E2E2;
+    height: 54px;
+}
+#request-btn{
+    padding: 20px 90px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
